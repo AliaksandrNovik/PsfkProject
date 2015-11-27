@@ -20,7 +20,7 @@ public class TestFirst {
 	private FutureTravelPage travelPage;
 	private PowerChatPage powerPage;
 	
-	@Test(priority = 2)
+	@Test(priority = 3)
 	public void testMobile() {
 		mobilePage = new FutureMobilePage(DriverManager.getInstance().getWebDriver());
 		mobilePage.openPage(URL_FUTURE_MOBILE);
@@ -31,7 +31,7 @@ public class TestFirst {
 		}
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 2)
 	public void testTravel() {
 		travelPage = new FutureTravelPage(DriverManager.getInstance().getWebDriver());
 		travelPage.openPage(URL_FUTURE_TRAVEL);
@@ -42,7 +42,7 @@ public class TestFirst {
 		}
 	}
 		
-	@Test(priority = 3)
+	@Test(priority = 1)
 	public void testPowerChat() {
 		powerPage = new PowerChatPage(DriverManager.getInstance().getWebDriver());
 		powerPage.openPage(URL_POWER_CHAT);

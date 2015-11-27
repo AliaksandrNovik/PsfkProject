@@ -34,11 +34,14 @@ public class ImageUtil {
 			image = ImageIO.read(url);
 			switch(type){
 			case MOBILE:
-				ImageIO.write(image, "png",new File(PATH_TO_APP_FOLDER + String.format(PATH_TO_MOBILE_FOLDER, currentSlide)));
+				ImageIO.write(image, "png", new File(PATH_TO_APP_FOLDER + String.format(PATH_TO_MOBILE_FOLDER, currentSlide)));
+				break;
 			case TRAVEL:
-				ImageIO.write(image, "png",new File(PATH_TO_APP_FOLDER + String.format(PATH_TO_TRAVEL_FOLDER, currentSlide)));
+				ImageIO.write(image, "png", new File(PATH_TO_APP_FOLDER + String.format(PATH_TO_TRAVEL_FOLDER, currentSlide)));
+				break;
 			case POWER:
-				ImageIO.write(image, "png",new File(PATH_TO_APP_FOLDER + String.format(PATH_TO_POWER_CHAT_FOLDER, currentSlide)));
+				ImageIO.write(image, "png", new File(PATH_TO_APP_FOLDER + String.format(PATH_TO_POWER_CHAT_FOLDER, currentSlide)));
+				break;
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

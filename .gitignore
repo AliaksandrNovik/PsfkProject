@@ -25,7 +25,8 @@
 /.metadata
 /bin
 /resources
-
+*.rar
+*.zip
 
 *.app
 /logs
